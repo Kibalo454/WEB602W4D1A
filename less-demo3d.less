@@ -1,4 +1,15 @@
-@my-property: color;  // added property
+// Variables
+@my-property: color;
+@background-color: #81F7D8; // teal/cyan color
+@border-color: #000000;
+
 .myclass {
-   background-@{my-property}: #81F7D8;
+    border: 2px solid @border-color;
+    padding: 20px;
+    
+    p {
+        span {
+            background-@{my-property}: @background-color; // Creates: background-color: #81F7D8;
+        }
+    }
 }

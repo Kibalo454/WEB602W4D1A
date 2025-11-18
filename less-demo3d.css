@@ -1,0 +1,7 @@
+.myclass {
+  border: 2px solid #000000;
+  padding: 20px;
+}
+.myclass p span {
+  background-color: #81F7D8;
+}

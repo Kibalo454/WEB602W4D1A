@@ -1,6 +1,17 @@
-// http://ghanizahid.com/less-demo3c1.less
-@path : "http://ghanizahid.com"; // website URL
-@import "@{path}/less-demo3c1.less";
+// Variables
+@background-color: #cccccc; // gray highlight color
+@border-color: #000000;
+@text-color: #A52A2A; // brown/red color
+
 .myclass {
-   color : #A52A2A;
+    border: 2px solid @border-color;
+    padding: 20px;
+    
+    p {
+        color: @text-color;
+        
+        span {
+            background-color: @background-color;
+        }
+    }
 }
